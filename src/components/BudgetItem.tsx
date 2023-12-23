@@ -15,7 +15,7 @@ const BudgetItem = ({ budget, showDelete = false }:BudgetItemProps) => {
   const { id, name, amount, color } = budget;
   const spent = calculateSpentByBudget(id);
   return(
-    <div className='w-[500px] min-h-[200px] bg-gray-900 p-5 flex flex-col justify-between'>
+    <div className='xs:w-[370px] md:w-[500px] min-h-[200px] bg-gray-900 p-5 flex flex-col justify-between'>
           <div style={{color:`hsl(${color})`}}  className='flex justify-between'>
             <p>{name}</p>
             <p >{formatCurrency(amount)} بودجه</p>

@@ -36,9 +36,9 @@ const AddExpenseForm = ({ budgets }:budgets) => {
         className=""
         ref={formRef}
       >
-    <div className='bg-gray-700 w-[500px] 2xl:w-[700px] h-[340px] p-10 mt-10'>
+    <div className='bg-gray-700 xs:w-[370px] md:w-[500px] 2xl:w-[700px] h-[380px] p-10 mt-10'>
             <h3 className='text-3xl font-bold text-slate-300'>اضافه کردن هزینه</h3>
-              <div className='flex justify-between gap-x-3'>
+              <div className='flex flex-col  gap-x-3'>
                   <div className='mt-5 flex flex-col w-full'>
                   <label className='text-slate-300 font-bold mb-2' htmlFor="newExpense">نام هزینه</label>
                   <input

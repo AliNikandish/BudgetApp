@@ -23,7 +23,7 @@ const AddBudgetForm = () => {
 
   return (
     <fetcher.Form method="post" className="grid-sm" ref={formRef}>
-      <div className="bg-gray-700 w-[500px] 2xl:w-[700px] h-[340px] p-10 mt-10 rounded">
+      <div className="bg-gray-700 xs:w-[370px] md:w-[500px] 2xl:w-[700px] h-[380px] p-10 mt-10 rounded">
         <h3 className="text-3xl text-slate-300 font-bold">اضافه کردن بودجه</h3>
         <div className="mt-5 flex flex-col">
           <label className="text-slate-300 font-bold mb-2" htmlFor="newBudget">

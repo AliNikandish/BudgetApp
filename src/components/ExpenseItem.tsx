@@ -31,12 +31,12 @@ const ExpenseItem = ({ expense, showBudget }: ExpenseItemProps) => {
       <td className="py-3 px-6 text-right">
         <p className="text-lg">{formatCurrency(expense.amount)}</p>
       </td>
-      <td className="py-3 px-6 text-right">
+      <td className="py-3 px-6 text-right hidden sm:block">
         <p className="text-lg">{formatDateToLocaleString(expense.createdAt)}</p>
       </td>
 
       {showBudget && (
-        <td className="py-3 px-4 text-right">
+        <td className="py-3 px-4 text-right hidden sm:block ">
           <Link to={`/budget/${budget.id}`}>
             <span
               style={{ backgroundColor: `hsl(${budget.color})` }}
